@@ -135,8 +135,9 @@
     margin: 0 auto;
     justify-content: space-between;
 }
+
 .intro-info {
-max-width: 595px;
+    max-width: 595px;
 }
 
 .intro-heading {
@@ -165,6 +166,7 @@ max-width: 595px;
     margin: 0;
     margin-bottom: 58px;
 }
+
 .intro-action {
     display: flex;
     box-sizing: border-box;
@@ -183,6 +185,7 @@ max-width: 595px;
     background-color: #FF2D2D;
     text-decoration: none;
 }
+
 .intro-video {
     width: 551px;
     height: 356px;
