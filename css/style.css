@@ -52,6 +52,7 @@
         url('../fonts/open-sans-v34-latin_cyrillic-800italic.woff') format('woff');
 }
 
+/*Page*/
 .page {
     font-family: 'Open Sans';
     font-style: normal;
@@ -59,21 +60,31 @@
     font-size: 16px;
 }
 
-/*Header*/
-.header-wrapper {
-    padding-top: 29px;
-    background-color: #F6F2F2;
+.page__inner {
+    display: block;
+    width: 100%;
+}
+.page__inner_into {
+padding-top: 29px;
 }
 
+.page__inner_grey{
+    background-color: #F6F2F2;
+}
+.page__inner_section {
+    padding: 102px 0 110px;
+}
+.page__header {
+    margin: 0 auto;
+}
+/* Header */
 .header {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-    width: 100%;
     width: 1249px;
     min-height: 89px;
     align-items: stretch;
-    margin: 0 auto;
     background-color: rgb(0, 0, 0, 0.8);
 }
 
@@ -81,7 +92,7 @@
     margin-left: -30px;
 }
 
-.menu-list {
+.site-menu__link {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -90,13 +101,13 @@
 
 }
 
-.menu-list>li {
+.site-menu__item {
     display: flex;
     min-height: 89px;
 
 }
 
-.menu-link {
+.site-menu__link {
     margin-left: -15px;
     display: flex;
     align-items: center;
@@ -112,23 +123,16 @@
     padding-bottom: 25px;
 }
 
-.menu-link:hover {
+.site-menu__link:hover {
     background-color: #FF3F40;
 }
 
-.active-link {
+.site-menu__link_active {
     background-color: #FF3F40;
 }
 
 /* Main */
 /* Intro */
-.intro-wrapper {
-    display: block;
-    width: 100%;
-    padding: 102px 0 110px;
-    background-color: #F6F2F2;
-}
-
 .intro {
     display: flex;
     width: 1249px;
@@ -136,11 +140,11 @@
     justify-content: space-between;
 }
 
-.intro-info {
+.intro__info {
     max-width: 595px;
 }
 
-.intro-heading {
+.intro__heading {
     font-family: 'Open Sans';
     font-size: 60px;
     line-height: 72px;
@@ -153,11 +157,11 @@
     margin-top: -16px;
 }
 
-.intro-special {
+.intro__span_special {
     letter-spacing: 6px;
 }
 
-.intro-text {
+.intro__text {
     font-family: 'Open Sans';
     align-items: center;
     font-weight: 400;
@@ -167,7 +171,7 @@
     margin-bottom: 58px;
 }
 
-.intro-action {
+.action-link {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -175,18 +179,22 @@
     width: 227px;
     min-height: 55px;
     padding: 0.5em 1em;
-    color: #fff;
     font-family: 'Open Sans';
     font-weight: 700;
     align-items: center;
     line-height: 34px;
     font-size: 18px;
     border-radius: 5px;
-    background-color: #FF2D2D;
     text-decoration: none;
 }
 
-.intro-video {
+.intro__action_red-full {
+    color: #fff;
+    background-color: #FF2D2D;
+
+}
+
+.intro__video {
     width: 551px;
     height: 356px;
     object-fit: cover;
