@@ -116,10 +116,10 @@ padding-top: 29px;
 }
 
 .site-menu__link {
-    margin-left: -15px;
+    margin-left: -27px;
     display: flex;
     align-items: center;
-    padding: 0 36px;
+    padding: 0 43px;
     font-family: 'Open Sans';
     font-size: 14px;
     line-height: 24px;
@@ -184,11 +184,10 @@ padding-top: 29px;
     display: inline-block;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
     text-align: center;
     width: 227px;
     min-height: 55px;
-    padding: 16px 0;
+    padding: 11px 0;
     font-family: 'Open Sans';
     font-weight: 700;
     align-items: center;
@@ -201,6 +200,7 @@ padding-top: 29px;
 .intro__action_red-full {
     color: #fff;
     background-color: #FF2D2D;
+    box-shadow: 4px 4px 6px 0 rgb(0 0 0 / 25%);
 }
 
 .intro__video {
