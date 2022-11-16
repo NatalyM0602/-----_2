@@ -720,6 +720,7 @@
     line-height: 34px;
     letter-spacing: 0.32px;
     text-transform: uppercase;
+    word-break: break-all;
     color: #FFFFFF;
     background-color: #FF2D2D;
 }
