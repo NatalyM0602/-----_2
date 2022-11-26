@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src: local(''),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: local(''),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 800;
     src: local(''),
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     src: local(''),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 400;
     src: local(''),
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: italic;
     font-weight: 800;
     src: local(''),
@@ -179,11 +179,13 @@ button {
         flex-wrap: nowrap;
     }
 }
+
 @media screen and (max-width: 700px) {
     .intro {
         flex-wrap: wrap;
     }
 }
+
 .intro__info {
     max-width: 595px;
     margin-right: 2vw;
@@ -836,17 +838,19 @@ button {
 .feedback__form {
     display: flex;
     flex-wrap: wrap;
-   max-width: 731px;
+    max-width: 731px;
     justify-content: space-between;
 }
+
 .feedback__form input::placeholder,
-.feedback__form textarea::placeholder{
+.feedback__form textarea::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     color: #000000;
 }
+
 .feedback__name {
     box-sizing: border-box;
     width: 339px;
