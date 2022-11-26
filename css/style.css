@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     src: local(''),
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 600;
     src: local(''),
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
     src: local(''),
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     src: local(''),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 400;
     src: local(''),
@@ -44,7 +44,7 @@
 }
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 800;
     src: local(''),
@@ -62,7 +62,7 @@ button {
 
 /*Page*/
 .page {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -101,7 +101,7 @@ button {
     box-sizing: border-box;
     align-items: stretch;
     justify-content: center;
-    width: 1249px;
+    max-width: 1249px;
     min-height: 89px;
     background-color: rgb(0, 0, 0, 0.8);
 }
@@ -111,6 +111,12 @@ button {
     padding: 0 3em;
 }
 
+@media screen and (max-width: 600px) {
+    .site-menu {
+        margin-left: 0;
+    }
+}
+
 .site-menu__list {
     display: flex;
     flex-wrap: wrap;
@@ -118,8 +124,12 @@ button {
     padding: 0;
     align-items: stretch;
     list-style: none;
+}
 
-
+@media screen and (max-width: 600px) {
+    .site-menu__list {
+        justify-content: center;
+    }
 }
 
 .site-menu__item {
@@ -128,7 +138,6 @@ button {
     min-height: 89px;
     flex-direction: column;
     flex-wrap: wrap;
-
 }
 
 .site-menu__link {
@@ -136,9 +145,9 @@ button {
     display: flex;
     align-items: center;
     padding: 0 43px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -159,21 +168,48 @@ button {
 /* Intro */
 .intro {
     display: flex;
-    width: 1249px;
+    flex-wrap: wrap;
+    max-width: 1249px;
     margin: 0 auto;
     justify-content: space-between;
 }
 
+@media screen and (min-width: 1240px) {
+    .intro {
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (max-width: 700px) {
+    .intro {
+        flex-wrap: wrap;
+    }
+}
 .intro__info {
     max-width: 595px;
+    margin-right: 2vw;
+}
+
+@media screen and (max-width: 1240px) {
+    .intro__info {
+        width: 50%;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro__info {
+        width: 100%;
+        margin-bottom: 80px;
+    }
 }
 
 .intro__heading {
-    word-break: break-all;
-    font-family: 'Open Sans';
+    overflow-wrap: break-word;
+    font-family: 'Open Sans', sans-serif, sans-serif;
     font-size: 60px;
-    line-height: 72px;
-    font-weight: 800;
+    line-height: 1.2;
+    font-variation-settings: "wght" 800;
     align-items: center;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -183,16 +219,24 @@ button {
     color: #000000;
 }
 
+@media screen and (max-width: 700px) {
+    .intro__heading {
+        margin-top: 0;
+    }
+}
+
 .intro__span_special {
+    word-break: break-word;
+    hyphens: auto;
     letter-spacing: 6px;
 }
 
 .intro__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif, sans-serif;
     align-items: center;
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.7;
     margin: 0;
     margin-bottom: 58px;
     color: #000000;
@@ -213,10 +257,10 @@ button {
     width: 227px;
     min-height: 55px;
     padding: 8px 0;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     align-items: center;
-    line-height: 34px;
+    line-height: 1.8;
     font-size: 18px;
     border-radius: 5px;
     text-decoration: none;
@@ -235,10 +279,23 @@ button {
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
 
+@media screen and (min-width: 1240px) {
+    .intro__video {
+        width: 50%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro__video {
+        width: 100%;
+    }
+}
+
 /* Services */
 .services {
     display: flex;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 105px 0 50px;
     border-bottom: 2px solid #ECECEC;
@@ -255,10 +312,10 @@ button {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     font-weight: 700;
-    line-height: 55px;
+    line-height: 1.3;
     letter-spacing: 0.42px;
     margin: 0;
     margin-top: -2px;
@@ -270,10 +327,10 @@ button {
 }
 
 .services__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.7;
     margin-bottom: 58px;
     align-items: center;
     color: #000000;
@@ -287,10 +344,10 @@ button {
 
 .services__about {
     margin: 0;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.7;
     align-items: center;
     color: #000000;
 }
@@ -373,7 +430,7 @@ button {
 .services__title {
     margin: 0;
     margin-bottom: 7px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 24.0692px;
     line-height: 1.2;
@@ -384,9 +441,11 @@ button {
 
 /* Feature */
 .feature {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 95px 0 65px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .feature__header {
@@ -397,7 +456,7 @@ button {
     margin: 0;
     margin-bottom: 16.5px;
     padding-left: 27px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
@@ -408,14 +467,14 @@ button {
 }
 
 .feature__about {
-    width: 537px;
+    max-width: 537px;
     margin: 0 auto;
     margin-bottom: 26.5px;
     padding-left: 34px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.7;
     text-align: center;
 }
 
@@ -453,10 +512,10 @@ button {
 }
 
 .filter__link {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.22px;
     text-transform: uppercase;
     text-decoration: none;
@@ -487,7 +546,7 @@ button {
 
 /* Team */
 .team {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 38px 0 107px;
     text-align: left;
@@ -498,7 +557,8 @@ button {
 }
 
 .team__heading {
-    font-family: 'Open Sans';
+    max-width: 374px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     font-weight: 700;
     margin: 0;
@@ -510,7 +570,7 @@ button {
 }
 
 .team__text {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
@@ -554,14 +614,14 @@ button {
 }
 
 .team__lead-main {
-    width: 631px;
+    max-width: 631px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
 .team__lead-name {
     display: block;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 0.28px;
@@ -575,10 +635,10 @@ button {
 }
 
 .team__lead-about {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.7;
     margin-left: -6px;
     margin-bottom: 40px;
     align-items: center;
@@ -597,10 +657,10 @@ button {
 }
 
 .team__lead-link {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3;
     letter-spacing: 0.9px;
     text-decoration: none;
     color: #000000;
@@ -632,7 +692,7 @@ button {
 
 .team__other-name {
     display: none;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
     text-align: center;
@@ -658,7 +718,7 @@ button {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     margin-bottom: 10px;
     padding: 150px 0 140px;
@@ -667,7 +727,7 @@ button {
 .subsribe__heading {
     margin: 0;
     margin-bottom: 11px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 42px;
     line-height: 1.2;
@@ -677,10 +737,10 @@ button {
 }
 
 .subsribe__about {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.7;
     text-align: center;
     margin: 0;
     margin-bottom: 57px;
@@ -702,10 +762,10 @@ button {
     border-radius: 5px;
     border: none;
     background-color: #fff;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     align-items: center;
     letter-spacing: 0.4px;
     color: #2C2C2C;
@@ -720,10 +780,10 @@ button {
     height: 79px;
     border-radius: 5px;
     margin: 0 auto;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 34px;
+    line-height: 1.8;
     letter-spacing: 0.32px;
     text-transform: uppercase;
     word-break: break-all;
@@ -733,18 +793,19 @@ button {
 
 /* Feedback */
 .feedback {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 86px 0 107px;
 }
 
 .feedback__header {
-    width: 753px;
+    max-width: 753px;
+    margin: 0;
     margin-bottom: 78px;
 }
 
 .feedback__heading {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     font-weight: 700;
     margin: 0;
@@ -756,6 +817,7 @@ button {
 }
 
 .feedback__about {
+    max-width: 752px;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
@@ -774,10 +836,17 @@ button {
 .feedback__form {
     display: flex;
     flex-wrap: wrap;
-    width: 731px;
+   max-width: 731px;
     justify-content: space-between;
 }
-
+.feedback__form input::placeholder,
+.feedback__form textarea::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #000000;
+}
 .feedback__name {
     box-sizing: border-box;
     width: 339px;
@@ -788,16 +857,11 @@ button {
     padding-left: 54px;
     margin-right: 53px;
     margin-bottom: 44px;
-}
-
-.feedback__name::placeholder {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.8;
     letter-spacing: 0.32px;
-    color: #000000;
-
 }
 
 .feedback__email {
@@ -812,7 +876,7 @@ button {
 }
 
 .feedback__email::placeholder {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -832,20 +896,12 @@ button {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.feedback__textarea::placeholder {
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #000000;
-}
-
 .feedback__button {
     width: 728px;
     height: 72px;
     border-radius: 5px;
     border: none;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.8;
@@ -868,7 +924,7 @@ button {
 }
 
 .contacts__haeding {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.8;
@@ -880,7 +936,7 @@ button {
 }
 
 .contacts__address {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -891,7 +947,7 @@ button {
 
 .contacts__email {
     display: block;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
@@ -903,11 +959,46 @@ button {
 
 .contacts__tel {
     display: block;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
     align-items: center;
     color: #FFFFFF;
     margin: 0;
+}
+
+/* Footer */
+.page__inner_dark-2 {
+    background-color: #313030;
+    box-sizing: border-box;
+}
+
+.footer {
+    max-width: 1249px;
+    min-height: 111px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    color: #B8B8B8;
+}
+
+.social {
+    display: flex;
+    gap: 18px;
+}
+
+.social__logo {
+    margin: 0;
+    width: 33px;
+    height: 33px;
 }
