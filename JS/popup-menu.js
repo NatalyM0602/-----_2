@@ -15,4 +15,5 @@ function closeMenu(evt) {
         menuList.classList.add('hide')
     }
 }
+
 document.addEventListener('click', closeMenu);
