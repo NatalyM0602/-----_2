@@ -86,12 +86,12 @@ button {
 }
 
 .page__inner_subsribe {
-    padding: 0 2vw;
+    padding: 0 1vw;
 }
 
 
 .page__inner_footer {
-    padding: 0 2vw;
+    padding: 0 1vw;
 }
 
 .page__header {
@@ -100,6 +100,8 @@ button {
 
 /* Header */
 .header {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -167,6 +169,79 @@ button {
 .site-menu__link_active {
     background-color: #FF3F40;
 }
+@media screen and (max-width: 800px) {
+    .site-menu {
+        display: none;
+    }    
+}
+/* Popup-menu */
+.popup-menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.popup-menu__button {
+    display: block;
+    width: 180px;
+    height: 80px;
+    background-image: url('../img/menu_icon.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 12px;
+    border: none;
+}
+.popup-menu__list {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0, 0.8);
+    left: 50%;
+    transform: translate(-50%, 100%);
+    bottom: 0;
+    z-index: 1;
+}
+
+.popup-menu__item {
+    display: flex;
+    justify-content: center;
+    min-height: 89px;
+    flex-wrap: wrap;
+}
+
+.popup-menu__link {
+    display: flex;
+    align-items: center;
+    padding: 0 43px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #E0E0E0;
+    padding-top: 39px;
+    padding-bottom: 25px;
+}
+
+.popup-menu__link:hover {
+    background-color: #FF3F40;
+}
+
+.popup-menu__link_active {
+    background-color: #FF3F40;
+}
+
+@media screen and (min-width: 801px) {
+    .popup-menu {
+        display: none;
+    } 
+}
 
 /* Main */
 /* Intro */
@@ -175,7 +250,7 @@ button {
     flex-wrap: wrap;
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 1vw;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -193,7 +268,7 @@ button {
 }
 
 .intro__section {
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 102px;
     padding-bottom: 110px;
 }
@@ -221,7 +296,7 @@ button {
 .intro__heading {
     overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif, sans-serif;
-    font-size: 60px;
+    font-size: clamp(2em, 2em + 2vw, 60px);
     line-height: 1.2;
     font-variation-settings: "wght" 800;
     align-items: center;
@@ -312,7 +387,7 @@ button {
     display: flex;
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 105px;
     padding-bottom: 50px;
     border-bottom: 2px solid #ECECEC;
@@ -491,7 +566,7 @@ button {
 .feature {
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 95px;
     padding-bottom: 72px;
 }
@@ -604,7 +679,7 @@ button {
 }
 
 .feature__product {
-    width: 297px;
+    width: clamp(150px, 100%, 297px); 
     object-fit: cover;
     object-position: 0 54%;
     flex: 1 1;
@@ -614,7 +689,7 @@ button {
 .team {
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 38px;
     padding-bottom: 107px;
     text-align: left;
@@ -688,7 +763,7 @@ button {
 }
 
 .team__lead-photo {
-    width: 324px;
+    width: clamp(250px, 100%, 324px);
     height: 460px;
     object-position: bottom;
     object-fit: contain;
@@ -868,8 +943,7 @@ button {
     max-width: 1249px;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 14px;
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 150px;
     padding-bottom: 140px;
 }
@@ -957,7 +1031,7 @@ button {
 .feedback {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 1vw;
     padding-top: 86px;
     padding-bottom: 115px;
 }
@@ -999,7 +1073,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: 1fr 731px 107px 411px 1fr;
+    grid-template-columns: 1fr 731px minmax(auto, 107px) 411px 1fr;
     grid-template-rows: auto;
 }
 
@@ -1011,7 +1085,7 @@ button {
 .feedback__body::after {
     content: '';
     grid-column: 5 / 6;
-    background-color: #2D2D2D;
+    background-color: rgb(45, 45, 45, 1);
 }
 
 @media screen and (max-width: 1248px) {
@@ -1149,7 +1223,7 @@ button {
 
 .feedback__contacts {
     color: #FFFFFF;
-    background-color: #2D2D2D;
+    background-color: rgb(45, 45, 45, 1);
     grid-column: 4 / 5;
 }
 
@@ -1243,4 +1317,8 @@ button {
     margin: 0;
     width: 33px;
     height: 33px;
+}
+/* JS */
+.hide {
+    display: none;
 }
