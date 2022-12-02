@@ -266,7 +266,6 @@ form {
     flex-wrap: wrap;
     max-width: 1249px;
     margin: 0 auto;
-    padding: 0 1vw;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -840,7 +839,6 @@ form {
     text-transform: uppercase;
     margin: 0;
     margin-top: -9px;
-    margin-left: -8px;
     margin-bottom: 17px;
     align-self: center;
     color: #000000;
@@ -851,7 +849,6 @@ form {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.7;
-    margin-left: -6px;
     margin-bottom: 40px;
     align-items: center;
     color: #000000;
@@ -861,11 +858,11 @@ form {
 @media screen and (max-width: 800px) {
     .team__lead-name {
         margin-top: 0;
-        margin-left: 0;
+        text-align: center;
     }
 
     .team__lead-about {
-        margin-left: 0;
+        text-align: center;
     }
 }
 
@@ -874,14 +871,13 @@ form {
     flex-wrap: wrap;
     gap: 30px;
     margin: 0;
-    margin-left: -4px;
     padding: 0;
     list-style: none;
 }
 
 @media screen and (max-width: 800px) {
     .team__lead-social {
-        margin-left: 0;
+        justify-content: center;
     }
 }
 
