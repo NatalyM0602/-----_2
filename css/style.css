@@ -59,9 +59,11 @@
 button {
     cursor: pointer;
 }
+
 form {
     cursor: text;
 }
+
 /*Page*/
 .page {
     font-family: 'Open Sans', sans-serif;
@@ -112,11 +114,13 @@ form {
     min-height: 89px;
     background-color: rgb(0, 0, 0, 0.8);
 }
+
 @media screen and (max-width: 800px) {
-    .header{
-    position: fixed;
+    .header {
+        position: fixed;
     }
 }
+
 .site-menu {
     margin-left: -20px;
     padding: 0 3em;
@@ -174,17 +178,20 @@ form {
 .site-menu__link_active {
     background-color: #FF3F40;
 }
+
 @media screen and (max-width: 800px) {
     .site-menu {
         display: none;
-    }    
+    }
 }
+
 /* Popup-menu */
 .popup-menu {
     position: relative;
     display: flex;
     align-items: center;
 }
+
 .popup-menu__button {
     display: block;
     width: 200px;
@@ -198,6 +205,7 @@ form {
     background-color: #eeed9b;
     z-index: 1;
 }
+
 .popup-menu__list {
     display: flex;
     position: absolute;
@@ -245,14 +253,10 @@ form {
     background-color: #FF3F40;
 }
 
-.popup-menu__link_active {
-    background-color: #FF3F40;
-}
-
 @media screen and (min-width: 801px) {
     .popup-menu {
         display: none;
-    } 
+    }
 }
 
 /* Main */
@@ -691,7 +695,7 @@ form {
 }
 
 .feature__product {
-    width: clamp(150px, 100%, 297px); 
+    width: clamp(150px, 100%, 297px);
     object-fit: cover;
     object-position: 0 54%;
     flex: 1 1;
@@ -1330,6 +1334,7 @@ form {
     width: 33px;
     height: 33px;
 }
+
 /* JS */
 .hide {
     display: none;
