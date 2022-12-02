@@ -249,7 +249,7 @@ form {
 .popup-menu__link:hover {
     justify-content: center;
     align-items: center;
-    min-width: 100px;
+    min-width: 85px;
     background-color: #FF3F40;
 }
 
@@ -913,6 +913,7 @@ form {
         justify-content: center;
         grid-column: 1 / 2;
         grid-row: auto;
+        z-index: -1;
     }
 }
 
