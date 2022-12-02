@@ -3,55 +3,89 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-regular.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-regular.woff') format('woff');
-}
+         url('../fonts/open-sans-v34-latin_cyrillic-regular.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-regular.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-regular.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-regular.svg#OpenSans') format('svg'); 
+  }
+ 
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillic-700.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-700.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-700.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-700.svg#OpenSans') format('svg'); 
+  }
+ 
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillic-800.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-800.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-800.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-800.svg#OpenSans') format('svg'); 
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillic-italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-italic.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-italic.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-italic.svg#OpenSans') format('svg'); 
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillic-700italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-700italic.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-700italic.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-700italic.svg#OpenSans') format('svg'); 
+  }
+ 
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;    
+    src: local(''),
+         url('../fonts/open-sans-v34-latin_cyrillic-800italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-800italic.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-800italic.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-800italic.svg#OpenSans') format('svg'); 
+  }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-600.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-600.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 800;
-    src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-800.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-800.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-700.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-700.woff') format('woff');
-}
-
-@font-face {
+         url('../fonts/open-sans-v34-latin_cyrillic-600.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-600.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-600.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-600.svg#OpenSans') format('svg'); 
+  }
+  
+  @font-face {
     font-family: 'Open Sans';
     font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
     src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-italic.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: 800;
-    src: local(''),
-        url('../fonts/open-sans-v34-latin_cyrillic-800italic.woff2') format('woff2'),
-        url('../fonts/open-sans-v34-latin_cyrillic-800italic.woff') format('woff');
-}
-
+         url('../fonts/open-sans-v34-latin_cyrillic-600italic.woff2') format('woff2'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-600italic.woff') format('woff'),
+         url('../fonts/open-sans-v34-latin_cyrillic-600italic.ttf') format('truetype'), 
+         url('../fonts/open-sans-v34-latin_cyrillic-600italic.svg#OpenSans') format('svg'); 
+  }
 :root {
     scroll-behavior: smooth;
 }
@@ -139,6 +173,7 @@ form {
     padding: 0;
     align-items: stretch;
     list-style: none;
+    margin-left: -7px;
 }
 
 @media screen and (max-width: 600px) {
@@ -156,10 +191,11 @@ form {
 }
 
 .site-menu__link {
-    margin-left: -27px;
+    margin-left: 9px;
     display: flex;
     align-items: center;
-    padding: 0 43px;
+    box-sizing: border-box;
+    padding: 0 29px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 1.7;
@@ -173,10 +209,12 @@ form {
 
 .site-menu__link:hover {
     background-color: #FF3F40;
+
 }
 
 .site-menu__link_active {
     background-color: #FF3F40;
+
 }
 
 @media screen and (max-width: 800px) {
@@ -310,10 +348,10 @@ form {
 
 .intro__heading {
     overflow-wrap: break-word;
-    font-family: 'Open Sans', sans-serif, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: clamp(2em, 2em + 2vw, 60px);
     line-height: 1.2;
-    font-variation-settings: "wght" 800;
+    font-weight: 800;
     align-items: center;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -336,6 +374,7 @@ form {
 }
 
 .intro__text {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif, sans-serif;
     align-items: center;
     font-weight: 400;
@@ -440,6 +479,7 @@ form {
 .services__heading {
     display: flex;
     position: relative;
+    overflow-wrap: break-word;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 42px;
@@ -456,6 +496,7 @@ form {
 }
 
 .services__text {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -473,6 +514,7 @@ form {
 }
 
 .services__about {
+    overflow-wrap: break-word;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -566,6 +608,7 @@ form {
 }
 
 .services__title {
+    overflow-wrap: break-word;
     margin: 0;
     margin-bottom: 7px;
     font-family: 'Open Sans', sans-serif;
@@ -600,6 +643,7 @@ form {
 }
 
 .feature__heading {
+    overflow-wrap: break-word;
     margin: 0;
     margin-bottom: 16.5px;
     font-family: 'Open Sans', sans-serif;
@@ -615,7 +659,7 @@ form {
 .feature__about {
     max-width: 537px;
     margin: 0 auto 27px;
-
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -666,6 +710,7 @@ form {
 }
 
 .filter__link {
+    overflow-wrap: break-word;
     margin-right: 56px;
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
@@ -722,6 +767,7 @@ form {
 }
 
 .team__heading {
+    overflow-wrap: break-word;
     max-width: 374px;
     font-family: 'Open Sans', sans-serif;
     font-size: 42px;
@@ -740,6 +786,7 @@ form {
 }
 
 .team__text {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -778,13 +825,13 @@ form {
 }
 
 .team__lead-photo {
-    width: clamp(250px, 100%, 324px);
-    height: 460px;
-    object-position: bottom;
-    object-fit: contain;
-    background-color: #FF3F40;
+    flex-shrink: 0;
+    width: 321px;
+    height: 458px;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    align-self: start;
+    background-color: #FF3F40;
 }
 
 @media screen and (max-width: 800px) {
@@ -832,6 +879,7 @@ form {
 
 .team__lead-name {
     display: block;
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 600;
@@ -845,6 +893,7 @@ form {
 }
 
 .team__lead-about {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -882,6 +931,7 @@ form {
 }
 
 .team__lead-link {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 18px;
@@ -896,12 +946,12 @@ form {
 }
 
 .team__others {
-    display: flex;
+        display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
+    gap: 20px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    gap: 20px;
-    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -926,6 +976,7 @@ form {
 
 .team__other-name {
     display: none;
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -958,7 +1009,7 @@ form {
     margin: 0 auto;
     padding: 0 1vw;
     padding-top: 150px;
-    padding-bottom: 140px;
+    padding-bottom: 142px;
 }
 
 @media screen and (max-width: 1248px) {
@@ -968,6 +1019,7 @@ form {
 }
 
 .subsribe__heading {
+    overflow-wrap: break-word;
     margin: 0;
     margin-bottom: 11px;
     font-family: 'Open Sans', sans-serif;
@@ -980,6 +1032,7 @@ form {
 }
 
 .subsribe__about {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1045,7 +1098,7 @@ form {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1vw;
-    padding-top: 86px;
+    padding-top: 94px;
     padding-bottom: 115px;
 }
 
@@ -1060,11 +1113,12 @@ form {
 }
 
 .feedback__heading {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-size: 42px;
     font-weight: 700;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     margin-left: -1px;
     letter-spacing: 0.38px;
     text-transform: uppercase;
@@ -1145,6 +1199,7 @@ form {
     font-size: 16px;
     line-height: 1.7;
     color: #000000;
+    overflow-wrap: break-word;
 }
 
 .feedback__name {
@@ -1211,6 +1266,7 @@ form {
     height: 72px;
     border-radius: 5px;
     border: none;
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1251,6 +1307,7 @@ form {
 }
 
 .contacts__haeding {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -1263,6 +1320,7 @@ form {
 }
 
 .contacts__address {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1274,6 +1332,7 @@ form {
 
 .contacts__email {
     display: block;
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1286,6 +1345,7 @@ form {
 
 .contacts__tel {
     display: block;
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1312,6 +1372,7 @@ form {
 }
 
 .footer__copyright {
+    overflow-wrap: break-word;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
