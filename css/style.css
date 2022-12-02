@@ -1363,6 +1363,9 @@ form {
 
 .footer {
     display: flex;
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 11px;
     flex-wrap: wrap;
     max-width: 1249px;
     min-height: 111px;
