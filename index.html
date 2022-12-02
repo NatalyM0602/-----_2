@@ -8,8 +8,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,700;1,800&display=swap"
             rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="favoicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favoicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favoicon/favicon-16x16.png">
+        <link rel="manifest" href="favoicon/site.webmanifest">
+        <link rel="mask-icon" href="favoicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
         <script defer src="JS/popup-menu.js"></script>
@@ -32,7 +39,8 @@
                 <nav class="popup-menu">
                     <button class="popup-menu__button"></button>
                     <ul class="popup-menu__list hide">
-                        <li class="popup-menu__item"><a class="popup-menu__link popup-menu__link_active" href="#">Home</a>
+                        <li class="popup-menu__item"><a class="popup-menu__link popup-menu__link_active"
+                                href="#">Home</a>
                         </li>
                         <li class="popup-menu__item"><a class="popup-menu__link" href="#portfolio">Portfolio</a>
                         </li>
@@ -53,7 +61,7 @@
                             tempor incididunt ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor
                             incididunt.
                         </p>
-                        <a class="action-link intro__action_red-full" href="">Contact Us</a>
+                        <a class="action-link intro__action_red-full" href="#contact_us">Contact Us</a>
                     </div>
                     <video class="intro__video" preload="auto" muted autoplay loop controls poster="img/videoscr.jpg">
                         <source
@@ -69,7 +77,7 @@
                         tempor incididunt ut labore et.Lorem ni ipsum dolor sit amet, consectetur adipis cing elit, ed
                         doi
                         eiusmod tempor incididunt ut labore et.</p>
-                    <a class="action-link services__action_red-white" href="">Learn More</a>
+                    <a class="action-link services__action_red-white" href="#products">Learn More</a>
                 </div>
                 <div class="services__items">
                     <div class="services__item services__item_icon_mang">
@@ -102,7 +110,7 @@
                         incididunt ut labore et.</p>
                     <hr class="hor__line hor__line_center">
                 </div>
-                <div class="filter">
+                <div class="filter" id="products">
                     <ul class="filter__list">
                         <li class="filter__item">
                             <a class="filter__link filter__link_active" href="#">All</a>
@@ -216,7 +224,7 @@
                         <button class="feedback__button" type="submit">Send message</button>
                     </form>
                     <section class="feedback__contacts contacts">
-                        <h3 class="contacts__haeding">Contact info</h3>
+                        <h3 class="contacts__haeding" id="contact_us">Contact info</h3>
                         <address class="contacts__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</address>
                         <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
                         <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>

@@ -59,7 +59,9 @@
 button {
     cursor: pointer;
 }
-
+form {
+    cursor: text;
+}
 /*Page*/
 .page {
     font-family: 'Open Sans', sans-serif;
@@ -185,7 +187,7 @@ button {
 }
 .popup-menu__button {
     display: block;
-    width: 180px;
+    width: 200px;
     height: 80px;
     background-image: url('../img/menu_icon.svg');
     background-repeat: no-repeat;
@@ -193,6 +195,8 @@ button {
     background-position: center;
     border-radius: 12px;
     border: none;
+    background-color: #eeed9b;
+    z-index: 1;
 }
 .popup-menu__list {
     display: flex;
@@ -200,19 +204,21 @@ button {
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
-    align-items: center;
+    align-items: stretch;
     list-style: none;
     flex-direction: column;
     background-color: rgb(0, 0, 0, 0.8);
     left: 50%;
-    transform: translate(-50%, 100%);
+    transform: translate(-51%, 100%);
     bottom: 0;
     z-index: 1;
+    transition: visibility, transform 1s, 0.5s ease-in-out;
 }
 
 .popup-menu__item {
     display: flex;
     justify-content: center;
+    align-items: stretch;
     min-height: 89px;
     flex-wrap: wrap;
 }
@@ -233,6 +239,9 @@ button {
 }
 
 .popup-menu__link:hover {
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
     background-color: #FF3F40;
 }
 
