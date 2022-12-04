@@ -866,6 +866,8 @@ form {
 
 .team__lead-main {
     max-width: 631px;
+    margin-top: 9px;
+    margin-left: 5px;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     align-self: center;
